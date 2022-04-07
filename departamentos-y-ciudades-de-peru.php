@@ -1,14 +1,18 @@
 <?php
 /**
- * Plugin Name: Departamentos y Ciudades de Perú
- * Description: Complemento de departamentos y ciudades para pero para woocommerce
- * Version: 1.0.0
- * Author: Efrain Gonzalez
- * Author URI: https://eduardogonzalez.me/
- * License: GNU General Public License v3.0
- * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: departamentos-y-ciudades-de-peru
- * Domain Path: /languages
+ * @link              https://eduardogonzalez.me/
+ * @since             1.0.1
+ * @package           Departamentos y Ciudades de Perú
+ * @wordpress-plugin
+ * Plugin Name:       Departamentos y Ciudades de Perú
+ * Plugin URI:        https://eduardogonzalez.me/
+ * Description:       Complemento de departamentos y ciudades para pero para woocommerce
+ * Version:           1.0.1
+ * Author:            Efrain Gonzalez
+ * Author URI:        https://eduardogonzalez.me/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       departamentos-y-ciudades-de-peru
  * WC tested up to: 3.5
  * WC requires at least: 2.6
  */
