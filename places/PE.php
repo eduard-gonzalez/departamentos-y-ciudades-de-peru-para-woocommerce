@@ -382,6 +382,7 @@ $places['PE'] = array(
             "- Vitis"
 		),
 	'LMA' => array(
+        'Municipalidad Metropolitana de Lima',
 		),
 	'LOR' => array(
         "Maynas",

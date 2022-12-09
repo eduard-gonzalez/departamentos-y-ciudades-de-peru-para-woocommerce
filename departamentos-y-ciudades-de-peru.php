@@ -1,13 +1,13 @@
 <?php
 /**
  * @link              https://eduardogonzalez.me/
- * @since             1.0.1
+ * @since             1.0.2
  * @package           Departamentos y Ciudades de Perú
  * @wordpress-plugin
  * Plugin Name:       Departamentos y Ciudades de Perú
  * Plugin URI:        https://eduardogonzalez.me/
- * Description:       Complemento de departamentos y ciudades para pero para woocommerce
- * Version:           1.0.1
+ * Description:       Complemento de departamentos y ciudades para Peru woocommerce
+ * Version:           1.0.2
  * Author:            Efrain Gonzalez
  * Author URI:        https://eduardogonzalez.me/
  * License:           GPL-2.0+
@@ -20,7 +20,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
-add_action('plugins_loaded','states_places_peru_init',1);
+add_action('plugins_loaded','dpc_peru_states_places_peru_init',1);
 
 function states_places_peru_smp_notices($classes, $notice){
     ?>
@@ -29,7 +29,7 @@ function states_places_peru_smp_notices($classes, $notice){
     </div>
     <?php
 }
-function states_places_peru_init(){
+function dpc_peru_states_places_peru_init(){
     load_plugin_textdomain('departamentos-y-ciudades-de-peru-para-woocommerce',
         FALSE, dirname(plugin_basename(__FILE__)) . '/languages');
 
@@ -51,8 +51,10 @@ function states_places_peru_init(){
         add_action( 'woocommerce_shipping_init', 'filters_by_cities_method' );
     }
 }
-add_filter( 'woocommerce_default_address_fields', 'mrks_woocommerce_default_address_fields' );
-function mrks_woocommerce_default_address_fields( $fields ) {
+add_filter( 'woocommerce_default_address_fields', 'dpc_peru_woocommerce_default_address_fields' );
+function dpc_peru_woocommerce_default_address_fields( $fields ) {
+    $fields['city']['priority'] = 60;
+    $fields['state']['priority'] = 50;
     if ($fields['city']['priority'] < $fields['state']['priority']){
         $state_priority = $fields['state']['priority'];
         $fields['state']['priority'] = $fields['city']['priority'];
