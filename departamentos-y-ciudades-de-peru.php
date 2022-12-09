@@ -1,13 +1,13 @@
 <?php
 /**
  * @link              https://eduardogonzalez.me/
- * @since             1.0.2
+ * @since             1.0.3
  * @package           Departamentos y Ciudades de Perú
  * @wordpress-plugin
  * Plugin Name:       Departamentos y Ciudades de Perú
  * Plugin URI:        https://eduardogonzalez.me/
  * Description:       Complemento de departamentos y ciudades para Peru woocommerce
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Efrain Gonzalez
  * Author URI:        https://eduardogonzalez.me/
  * License:           GPL-2.0+
